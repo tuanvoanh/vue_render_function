@@ -11,7 +11,7 @@ export default {
       if (!search) return;
       shows.value = [];
       const result = await fetch(
-        `http://api.tvmaze.com/search/shows?q=${search}`
+        `https://api.tvmaze.com/search/shows?q=${search}`
       ).catch((e) => {
         error.value = "error" + e;
         console.log("got an error", error.value);
