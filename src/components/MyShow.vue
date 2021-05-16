@@ -50,7 +50,10 @@ export default {
               : shows.value.map((show) => {
                   console.log(show);
                   return h("div", { class: "show" }, [
-                    h("img", { src: show.show.image?.medium }),
+                    h("img", { 
+                        src: show.show.image?.medium,
+                        class: "fixedimg"
+                     }),
                     h("div", { class: "title" }, show.show.name),
                   ]);
                 }),
@@ -106,5 +109,11 @@ export default {
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
+}
+
+.fixedimg {
+    width: 210px;
+    height: 295px;
+    background-color: gainsboro;
 }
 </style>>
