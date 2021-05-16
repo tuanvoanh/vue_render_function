@@ -32,6 +32,6 @@ jobs:
           npm run build
           git config --global user.email ${{secrets.GIT_EMAIL}}
           git config --global user.name ${{secrets.GIT_NAME}}
-          git remote set-url https://${{secrets.GIT_TOKEN}}@github.com/tuanvoanh/vue_render_function.git
+          git remote set-url origin https://${{secrets.GIT_TOKEN}}@github.com/tuanvoanh/vue_render_function.git
           npm run deploy
 
