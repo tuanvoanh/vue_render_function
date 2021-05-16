@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Demo Vue Render Function</h2>
+    <h2>Demo Vue Render Function v2</h2>
     <Heading :level="1">TV Finder</Heading>
     <MyShow />
   </div>
