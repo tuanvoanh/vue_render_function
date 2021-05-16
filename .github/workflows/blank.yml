@@ -30,8 +30,8 @@ jobs:
         run: |
           npm install
           npm run build
-          git config --global user.email ${{GIT_EMAIL}}
-          git config --global user.name ${{GIT_NAME}}
-          git remote set-url https://${{secret.GIT_TOKEN}}@github.com/tuanvoanh/vue_render_function.git
-          npm run deploy
+          # git config --global user.email ${{GIT_EMAIL}}
+          # git config --global user.name ${{GIT_NAME}}
+          # git remote set-url https://${{secret.GIT_TOKEN}}@github.com/tuanvoanh/vue_render_function.git
+          # npm run deploy
 
