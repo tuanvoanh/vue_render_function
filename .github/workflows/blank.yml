@@ -31,8 +31,8 @@ jobs:
           npm install
           npm run build
           npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_EPG_BOT_TOKEN }}
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - name: Deploy 🚀
       #   uses: JamesIves/github-pages-deploy-action@4.1.3
       #   with:
