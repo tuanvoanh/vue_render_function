@@ -114,6 +114,6 @@ export default {
 .fixedimg {
     width: 210px;
     height: 295px;
-    background-color: gainsboro;
+    background-color: honeydew;
 }
 </style>>
